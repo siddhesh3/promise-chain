@@ -10,16 +10,19 @@ A small library that chains your multiple promise to 1
 
 ## Installation
 
-  `npm install @jdaudier/number-formatter`
+  `npm i @makejsgreatagain/promise-chain`
 
 ## Usage
 
-    var numFormatter = require('@jdaudier/number-formatter');
+    var pChain = new PromiseChain(initialPromise);
 
-    var formattedNum = numFormatter(35666);
-  
-  
-  Output should be `35,666`
+    pChain.then(firstAsyncMethod)
+        .catch(firstAsyncExceptionHandler)
+        .then(secondAsyncMethod)
+        .catch(secondAsyncExceptionHandler);
+
+
+Note that each Async method should return new promise.
 
 
 ## Tests
