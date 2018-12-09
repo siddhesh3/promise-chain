@@ -1,6 +1,6 @@
 {
   "name": "@makejsgreatagain/promise-chain",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Chain your promises to make code compact.",
   "main": "index.js",
   "scripts": {
